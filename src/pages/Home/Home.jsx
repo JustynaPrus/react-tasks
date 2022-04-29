@@ -1,12 +1,13 @@
 import { NavigationMenu } from "../../components/Navigation/NavigationMenu";
+import { Container } from "./Home.styles";
 
 export const Home = () => {
   return (
     <>
-      <div>
-        <h1>Cześć!</h1>
+      <Container>
         <NavigationMenu />
-      </div>
+        <h1>Zadania z Reacta</h1>
+      </Container>
     </>
   );
 };

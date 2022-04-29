@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
+import { StyledNav, StyledLink } from "./NavigationMenu.styles";
 
 export const NavTrainingOne = () => {
   return (
     <>
-      <nav>
-        <Link to="/trainingOne/task_1_2_3">zadanie 1_2_3</Link>
-        <Link to="/trainingOne/task_4">zadanie 4</Link>
-        <Link to="/trainingOne/task_5">zadanie 5</Link>
-      </nav>
+      <StyledNav>
+        <Link to="/trainingOne/task_1_2_3" style={{ textDecoration: "none" }}>
+          <StyledLink>zadanie 1_2_3</StyledLink>
+        </Link>
+        <Link to="/trainingOne/task_4" style={{ textDecoration: "none" }}>
+          <StyledLink>zadanie 4</StyledLink>
+        </Link>
+        <Link to="/trainingOne/task_5" style={{ textDecoration: "none" }}>
+          <StyledLink>zadanie 5</StyledLink>
+        </Link>
+      </StyledNav>
     </>
   );
 };
