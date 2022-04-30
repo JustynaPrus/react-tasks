@@ -5,8 +5,8 @@ export const NavTrainingOne = () => {
   return (
     <>
       <StyledNav>
-        <Link to="/trainingOne/task_1_2_3" style={{ textDecoration: "none" }}>
-          <StyledLink>zadanie 1_2_3</StyledLink>
+        <Link to="/trainingOne/task_card" style={{ textDecoration: "none" }}>
+          <StyledLink>Zadanie Komponent Karty</StyledLink>
         </Link>
         <Link to="/trainingOne/task_4" style={{ textDecoration: "none" }}>
           <StyledLink>zadanie 4</StyledLink>
