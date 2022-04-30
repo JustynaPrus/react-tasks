@@ -5,8 +5,11 @@ export const NavTrainingtwo = () => {
   return (
     <>
       <StyledNav>
-        <Link to="/trainingTwo/task_1" style={{ textDecoration: "none" }}>
-          <StyledLink>zadanie 1</StyledLink>
+        <Link
+          to="/trainingTwo/event_handling"
+          style={{ textDecoration: "none" }}
+        >
+          <StyledLink>1. Obsługa zdarzeń</StyledLink>
         </Link>
       </StyledNav>
     </>

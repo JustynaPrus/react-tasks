@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../constant/BreakPoints";
+import { device } from "../../../../constant/BreakPoints";
 
 export const Wrapper = styled.div`
   display: grid;
