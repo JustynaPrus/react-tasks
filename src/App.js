@@ -7,6 +7,7 @@ import { TrainingTwo } from "./pages/TrainingTwo/TrainingTwo";
 import { TaskCard } from "./components/TainingOne/TaskCard/TaskCard/TaskCard";
 import { ExampleFormik } from "./components/ExampleFormik";
 import { EventHandling } from "./components/TrainingTwo/EventHandling/EventHandling";
+import { ParentComponent } from "./components/TrainingTwo/ComponentTable/ParentComponent";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             <Route
               path="/trainingTwo/event_handling"
               element={<EventHandling />}
+            />
+            <Route
+              path="/trainingTwo/component_table"
+              element={<ParentComponent />}
             />
             <Route path="/formik" element={<ExampleFormik />} />
           </Routes>

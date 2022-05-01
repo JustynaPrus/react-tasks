@@ -11,3 +11,10 @@ export const StyledLink = styled.li`
   color: black;
   padding: 10px;
 `;
+
+export const SecondNav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+`;
