@@ -1,6 +1,6 @@
-import { NavTrainingtwo } from "../../components/Navigation/NavTrainingTwo";
+import { NavTrainingTwo } from "../../components/Navigation/NavTrainingTwo";
 import { NavigationMenu } from "../../components/Navigation/NavigationMenu";
-import { Container } from "../../App.styles";
+import { Container } from "./TrainingTwo.styles";
 
 export const TrainingTwo = () => {
   return (
@@ -8,7 +8,7 @@ export const TrainingTwo = () => {
       <Container>
         <NavigationMenu />
         <h1>Szkolenie 2</h1>
-        <NavTrainingtwo />
+        <NavTrainingTwo />
       </Container>
     </>
   );

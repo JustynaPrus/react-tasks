@@ -14,6 +14,9 @@ export const NavigationMenu = () => {
         <Link to="/trainingTwo" style={{ textDecoration: "none" }}>
           <StyledLink>Szkolenie 2</StyledLink>
         </Link>
+        <Link to="/trainingThree" style={{ textDecoration: "none" }}>
+          <StyledLink>Szkolenie 3</StyledLink>
+        </Link>
       </StyledNav>
     </>
   );

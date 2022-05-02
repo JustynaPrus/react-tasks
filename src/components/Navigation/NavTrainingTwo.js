@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { SecondNav, StyledLink } from "./NavigationMenu.styles";
 
-export const NavTrainingtwo = () => {
+export const NavTrainingTwo = () => {
   return (
     <>
       <SecondNav>

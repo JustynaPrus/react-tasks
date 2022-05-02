@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { TrainingOne } from "./pages/TrainingOne/TrainingOne";
 import { TrainingTwo } from "./pages/TrainingTwo/TrainingTwo";
+import { TrainingThree } from "./pages/TrainingThree/TrainingThree";
 import { TaskCard } from "./components/TainingOne/TaskCard/TaskCard/TaskCard";
 import { ExampleFormik } from "./components/ExampleFormik";
 import { EventHandling } from "./components/TrainingTwo/EventHandling/EventHandling";
 import { ParentComponent } from "./components/TrainingTwo/ComponentTable/ParentComponent";
+import { Task } from "./components/TrainingThree/Task/Task";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
               path="/trainingTwo/component_table"
               element={<ParentComponent />}
             />
+            <Route path="/trainingThree" element={<TrainingThree />} />
+            <Route path="/trainingThree/task" element={<Task />} />
             <Route path="/formik" element={<ExampleFormik />} />
           </Routes>
         </Router>
