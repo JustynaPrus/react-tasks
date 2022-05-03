@@ -20,25 +20,46 @@ function App() {
         <GlobalStyles />
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/trainingOne" element={<TrainingOne />} />
-            <Route path="/trainingOne/task_card" element={<TaskCard />} />
-            <Route path="/trainingOne/task_4" element={<TrainingOne />} />
-            <Route path="/trainingOne/task_5" element={<TrainingOne />} />
-            <Route path="/trainingTwo" element={<TrainingTwo />} />
+            <Route path="/react-tasks/" element={<Home />} exact />
+            <Route path="/react-tasks/trainingOne" element={<TrainingOne />} />
             <Route
-              path="/trainingTwo/event_handling"
+              path="/react-tasks/trainingOne/task_card"
+              element={<TaskCard />}
+            />
+            <Route
+              path="/react-tasks/trainingOne/task_4"
+              element={<TrainingOne />}
+            />
+            <Route
+              path="/react-tasks/trainingOne/task_5"
+              element={<TrainingOne />}
+            />
+            <Route path="/react-tasks/trainingTwo" element={<TrainingTwo />} />
+            <Route
+              path="/react-tasks/trainingTwo/event_handling"
               element={<EventHandling />}
             />
             <Route
-              path="/trainingTwo/component_table"
+              path="/react-tasks/trainingTwo/component_table"
               element={<ParentComponent />}
             />
-            <Route path="/trainingThree" element={<TrainingThree />} />
-            <Route path="/trainingThree/task" element={<TaskNavigation />} />
-            <Route path="/trainingThree/task/orders" element={<Orders />} />
-            <Route path="/trainingThree/task/clients" element={<Clients />} />
-            <Route path="/formik" element={<ExampleFormik />} />
+            <Route
+              path="/react-tasks/trainingThree"
+              element={<TrainingThree />}
+            />
+            <Route
+              path="/react-tasks/trainingThree/task"
+              element={<TaskNavigation />}
+            />
+            <Route
+              path="/react-tasks/trainingThree/task/orders"
+              element={<Orders />}
+            />
+            <Route
+              path="/react-tasks/trainingThree/task/clients"
+              element={<Clients />}
+            />
+            <Route path="/react-tasks/formik" element={<ExampleFormik />} />
           </Routes>
         </Router>
       </Container>

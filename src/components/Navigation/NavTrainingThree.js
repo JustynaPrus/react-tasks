@@ -5,7 +5,10 @@ export const NavTrainingThree = () => {
   return (
     <>
       <SecondNav>
-        <Link to="/trainingThree/task" style={{ textDecoration: "none" }}>
+        <Link
+          to="/react-tasks/trainingThree/task"
+          style={{ textDecoration: "none" }}
+        >
           <StyledLink>Task</StyledLink>
         </Link>
       </SecondNav>

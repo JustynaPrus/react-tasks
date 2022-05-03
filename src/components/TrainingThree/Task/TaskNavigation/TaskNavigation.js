@@ -6,13 +6,13 @@ export const TaskNavigation = () => {
     <>
       <StyledNav>
         <Link
-          to="/trainingThree/task/clients"
+          to="/react-tasks/trainingThree/task/clients"
           style={{ textDecoration: "none" }}
         >
           <StyledLink>Klienci</StyledLink>
         </Link>
         <Link
-          to="/trainingThree/task/orders"
+          to="/react-tasks/trainingThree/task/orders"
           style={{ textDecoration: "none" }}
         >
           <StyledLink>Zamówienia</StyledLink>
