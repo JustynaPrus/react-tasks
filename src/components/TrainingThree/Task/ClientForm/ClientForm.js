@@ -1,35 +1,30 @@
-import { useFormik, FormikProvider } from "formik";
-import * as yup from "yup";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
-export const ClientForm = () => {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      count: 1,
-    },
-    validationSchema: yup.object().shape({
-      name: yup.string().required("Name jest wymagany"),
-      count: yup
-        .number()
-        .min(1, "Nie moze byc mniejszy od 1")
-        .required("Count is required"),
-    }),
-    onSubmit: (values) => {
-      console.log(values);
-    },
-  });
-
+export const ClientForm = ({ initialValues, validationSchema, onSubmit }) => {
   return (
-    <div>
-      <FormikProvider value={formik}>
-        <form onSubmit={formik.handleSubmit}>
-          <input name="name" onChange={formik.handleChange} />
-          <p>{formik.touched.name && formik.errors.name}</p>
-          <input name="count" type="number" onChange={formik.handleChange} />
-          <p>{formik.touched.count && formik.errors.count}</p>
-          <button type="submit">Save</button>
-        </form>
-      </FormikProvider>
-    </div>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={onSubmit}
+    >
+      <Form>
+        <div>
+          <label htmlFor="name">Imię: </label>
+          <Field name="name" />
+          <ErrorMessage name="name" />
+        </div>
+        <div>
+          <label htmlFor="name">Nazwisko: </label>
+          <Field name="surname" />
+          <ErrorMessage name="surname" />
+        </div>
+        <div>
+          <label htmlFor="email">Email: </label>
+          <Field name="email" />
+          <ErrorMessage name="email" />
+        </div>
+        <button type="submit">Save</button>
+      </Form>
+    </Formik>
   );
 };
