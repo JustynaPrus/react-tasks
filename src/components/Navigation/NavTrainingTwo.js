@@ -6,13 +6,13 @@ export const NavTrainingTwo = () => {
     <>
       <SecondNav>
         <Link
-          to="/trainingTwo/event_handling"
+          to="/react-tasks/trainingTwo/event_handling"
           style={{ textDecoration: "none" }}
         >
           <StyledLink>1. Obsługa zdarzeń</StyledLink>
         </Link>
         <Link
-          to="/trainingTwo/component_table"
+          to="/react-tasks/trainingTwo/component_table"
           style={{ textDecoration: "none" }}
         >
           <StyledLink>3. Komponent Table</StyledLink>
