@@ -9,7 +9,9 @@ import { TaskCard } from "./components/TainingOne/TaskCard/TaskCard/TaskCard";
 import { ExampleFormik } from "./components/ExampleFormik";
 import { EventHandling } from "./components/TrainingTwo/EventHandling/EventHandling";
 import { ParentComponent } from "./components/TrainingTwo/ComponentTable/ParentComponent";
-import { Task } from "./components/TrainingThree/Task/Task";
+import { TaskNavigation } from "./components/TrainingThree/Task/TaskNavigation/TaskNavigation";
+import { Orders } from "./components/TrainingThree/Task/Orders/Orders";
+import { Clients } from "./components/TrainingThree/Task/Clients/Clients";
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
               element={<ParentComponent />}
             />
             <Route path="/trainingThree" element={<TrainingThree />} />
-            <Route path="/trainingThree/task" element={<Task />} />
+            <Route path="/trainingThree/task" element={<TaskNavigation />} />
+            <Route path="/trainingThree/task/orders" element={<Orders />} />
+            <Route path="/trainingThree/task/clients" element={<Clients />} />
             <Route path="/formik" element={<ExampleFormik />} />
           </Routes>
         </Router>
