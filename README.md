@@ -1,1 +1,1 @@
-Live site URL: https://justynaprus.github.io/react-tasks/
+Live site URL: https://react-tasks-json-server.herokuapp.com/
